@@ -1,4 +1,4 @@
-interface Shape {
+export interface Shape {
   draw(): void;
 }
 
