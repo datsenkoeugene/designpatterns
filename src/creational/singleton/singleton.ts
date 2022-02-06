@@ -1,5 +1,5 @@
-export default class Singletone {
-  private static _instance: Singletone = new Singletone();
+export default class Singleton {
+  private static _instance: Singleton = new Singleton();
   private _timeStamp: number;
   private constructor() {
     this._timeStamp = Date.now();
@@ -9,7 +9,7 @@ export default class Singletone {
     return this._timeStamp;
   }
 
-  public static get instance(): Singletone {
+  public static get instance(): Singleton {
     return this._instance;
   }
 }
